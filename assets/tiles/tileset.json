@@ -1,0 +1,1560 @@
+{
+ "image": "tileset.png",
+ "tileWidth": 16,
+ "tileHeight": 16,
+ "columns": 16,
+ "rows": 12,
+ "biomes": {
+  "meadow": [
+   "grass",
+   "dirt",
+   "water",
+   "sand"
+  ],
+  "forest": [
+   "forest",
+   "grass",
+   "dirt",
+   "water"
+  ],
+  "desert": [
+   "sand",
+   "stone",
+   "water"
+  ],
+  "corrupted": [
+   "corrupt",
+   "wasteland",
+   "deepwater"
+  ],
+  "volcanic": [
+   "ash",
+   "lava",
+   "wasteland"
+  ]
+ },
+ "transitionDirs": "n/s/e/w = B on that side; ne/nw/se/sw = B on both sides (A is a convex corner); *-inner = B only in that corner (A concave)",
+ "tiles": {
+  "grass-1": {
+   "index": 0,
+   "x": 0,
+   "y": 0,
+   "type": "ground",
+   "base": "grass"
+  },
+  "grass-2": {
+   "index": 1,
+   "x": 16,
+   "y": 0,
+   "type": "ground",
+   "base": "grass"
+  },
+  "grass-3": {
+   "index": 2,
+   "x": 32,
+   "y": 0,
+   "type": "ground",
+   "base": "grass"
+  },
+  "forest-1": {
+   "index": 3,
+   "x": 48,
+   "y": 0,
+   "type": "ground",
+   "base": "forest"
+  },
+  "forest-2": {
+   "index": 4,
+   "x": 64,
+   "y": 0,
+   "type": "ground",
+   "base": "forest"
+  },
+  "forest-3": {
+   "index": 5,
+   "x": 80,
+   "y": 0,
+   "type": "ground",
+   "base": "forest"
+  },
+  "dirt-1": {
+   "index": 6,
+   "x": 96,
+   "y": 0,
+   "type": "ground",
+   "base": "dirt"
+  },
+  "dirt-2": {
+   "index": 7,
+   "x": 112,
+   "y": 0,
+   "type": "ground",
+   "base": "dirt"
+  },
+  "dirt-3": {
+   "index": 8,
+   "x": 128,
+   "y": 0,
+   "type": "ground",
+   "base": "dirt"
+  },
+  "sand-1": {
+   "index": 9,
+   "x": 144,
+   "y": 0,
+   "type": "ground",
+   "base": "sand"
+  },
+  "sand-2": {
+   "index": 10,
+   "x": 160,
+   "y": 0,
+   "type": "ground",
+   "base": "sand"
+  },
+  "sand-3": {
+   "index": 11,
+   "x": 176,
+   "y": 0,
+   "type": "ground",
+   "base": "sand"
+  },
+  "stone-1": {
+   "index": 12,
+   "x": 192,
+   "y": 0,
+   "type": "ground",
+   "base": "stone"
+  },
+  "stone-2": {
+   "index": 13,
+   "x": 208,
+   "y": 0,
+   "type": "ground",
+   "base": "stone"
+  },
+  "stone-3": {
+   "index": 14,
+   "x": 224,
+   "y": 0,
+   "type": "ground",
+   "base": "stone"
+  },
+  "water-1": {
+   "index": 15,
+   "x": 240,
+   "y": 0,
+   "type": "ground",
+   "base": "water"
+  },
+  "water-2": {
+   "index": 16,
+   "x": 0,
+   "y": 16,
+   "type": "ground",
+   "base": "water"
+  },
+  "water-3": {
+   "index": 17,
+   "x": 16,
+   "y": 16,
+   "type": "ground",
+   "base": "water"
+  },
+  "deepwater-1": {
+   "index": 18,
+   "x": 32,
+   "y": 16,
+   "type": "ground",
+   "base": "deepwater"
+  },
+  "deepwater-2": {
+   "index": 19,
+   "x": 48,
+   "y": 16,
+   "type": "ground",
+   "base": "deepwater"
+  },
+  "deepwater-3": {
+   "index": 20,
+   "x": 64,
+   "y": 16,
+   "type": "ground",
+   "base": "deepwater"
+  },
+  "corrupt-1": {
+   "index": 21,
+   "x": 80,
+   "y": 16,
+   "type": "ground",
+   "base": "corrupt"
+  },
+  "corrupt-2": {
+   "index": 22,
+   "x": 96,
+   "y": 16,
+   "type": "ground",
+   "base": "corrupt"
+  },
+  "corrupt-3": {
+   "index": 23,
+   "x": 112,
+   "y": 16,
+   "type": "ground",
+   "base": "corrupt"
+  },
+  "wasteland-1": {
+   "index": 24,
+   "x": 128,
+   "y": 16,
+   "type": "ground",
+   "base": "wasteland"
+  },
+  "wasteland-2": {
+   "index": 25,
+   "x": 144,
+   "y": 16,
+   "type": "ground",
+   "base": "wasteland"
+  },
+  "wasteland-3": {
+   "index": 26,
+   "x": 160,
+   "y": 16,
+   "type": "ground",
+   "base": "wasteland"
+  },
+  "ash-1": {
+   "index": 27,
+   "x": 176,
+   "y": 16,
+   "type": "ground",
+   "base": "ash"
+  },
+  "ash-2": {
+   "index": 28,
+   "x": 192,
+   "y": 16,
+   "type": "ground",
+   "base": "ash"
+  },
+  "ash-3": {
+   "index": 29,
+   "x": 208,
+   "y": 16,
+   "type": "ground",
+   "base": "ash"
+  },
+  "lava-1": {
+   "index": 30,
+   "x": 224,
+   "y": 16,
+   "type": "ground",
+   "base": "lava"
+  },
+  "lava-2": {
+   "index": 31,
+   "x": 240,
+   "y": 16,
+   "type": "ground",
+   "base": "lava"
+  },
+  "lava-3": {
+   "index": 32,
+   "x": 0,
+   "y": 32,
+   "type": "ground",
+   "base": "lava"
+  },
+  "grass-water-n": {
+   "index": 33,
+   "x": 16,
+   "y": 32,
+   "type": "transition",
+   "a": "grass",
+   "b": "water",
+   "dir": "n"
+  },
+  "grass-water-s": {
+   "index": 34,
+   "x": 32,
+   "y": 32,
+   "type": "transition",
+   "a": "grass",
+   "b": "water",
+   "dir": "s"
+  },
+  "grass-water-e": {
+   "index": 35,
+   "x": 48,
+   "y": 32,
+   "type": "transition",
+   "a": "grass",
+   "b": "water",
+   "dir": "e"
+  },
+  "grass-water-w": {
+   "index": 36,
+   "x": 64,
+   "y": 32,
+   "type": "transition",
+   "a": "grass",
+   "b": "water",
+   "dir": "w"
+  },
+  "grass-water-ne": {
+   "index": 37,
+   "x": 80,
+   "y": 32,
+   "type": "transition",
+   "a": "grass",
+   "b": "water",
+   "dir": "ne"
+  },
+  "grass-water-nw": {
+   "index": 38,
+   "x": 96,
+   "y": 32,
+   "type": "transition",
+   "a": "grass",
+   "b": "water",
+   "dir": "nw"
+  },
+  "grass-water-se": {
+   "index": 39,
+   "x": 112,
+   "y": 32,
+   "type": "transition",
+   "a": "grass",
+   "b": "water",
+   "dir": "se"
+  },
+  "grass-water-sw": {
+   "index": 40,
+   "x": 128,
+   "y": 32,
+   "type": "transition",
+   "a": "grass",
+   "b": "water",
+   "dir": "sw"
+  },
+  "grass-water-ne-inner": {
+   "index": 41,
+   "x": 144,
+   "y": 32,
+   "type": "transition",
+   "a": "grass",
+   "b": "water",
+   "dir": "ne-inner"
+  },
+  "grass-water-nw-inner": {
+   "index": 42,
+   "x": 160,
+   "y": 32,
+   "type": "transition",
+   "a": "grass",
+   "b": "water",
+   "dir": "nw-inner"
+  },
+  "grass-water-se-inner": {
+   "index": 43,
+   "x": 176,
+   "y": 32,
+   "type": "transition",
+   "a": "grass",
+   "b": "water",
+   "dir": "se-inner"
+  },
+  "grass-water-sw-inner": {
+   "index": 44,
+   "x": 192,
+   "y": 32,
+   "type": "transition",
+   "a": "grass",
+   "b": "water",
+   "dir": "sw-inner"
+  },
+  "sand-water-n": {
+   "index": 45,
+   "x": 208,
+   "y": 32,
+   "type": "transition",
+   "a": "sand",
+   "b": "water",
+   "dir": "n"
+  },
+  "sand-water-s": {
+   "index": 46,
+   "x": 224,
+   "y": 32,
+   "type": "transition",
+   "a": "sand",
+   "b": "water",
+   "dir": "s"
+  },
+  "sand-water-e": {
+   "index": 47,
+   "x": 240,
+   "y": 32,
+   "type": "transition",
+   "a": "sand",
+   "b": "water",
+   "dir": "e"
+  },
+  "sand-water-w": {
+   "index": 48,
+   "x": 0,
+   "y": 48,
+   "type": "transition",
+   "a": "sand",
+   "b": "water",
+   "dir": "w"
+  },
+  "sand-water-ne": {
+   "index": 49,
+   "x": 16,
+   "y": 48,
+   "type": "transition",
+   "a": "sand",
+   "b": "water",
+   "dir": "ne"
+  },
+  "sand-water-nw": {
+   "index": 50,
+   "x": 32,
+   "y": 48,
+   "type": "transition",
+   "a": "sand",
+   "b": "water",
+   "dir": "nw"
+  },
+  "sand-water-se": {
+   "index": 51,
+   "x": 48,
+   "y": 48,
+   "type": "transition",
+   "a": "sand",
+   "b": "water",
+   "dir": "se"
+  },
+  "sand-water-sw": {
+   "index": 52,
+   "x": 64,
+   "y": 48,
+   "type": "transition",
+   "a": "sand",
+   "b": "water",
+   "dir": "sw"
+  },
+  "sand-water-ne-inner": {
+   "index": 53,
+   "x": 80,
+   "y": 48,
+   "type": "transition",
+   "a": "sand",
+   "b": "water",
+   "dir": "ne-inner"
+  },
+  "sand-water-nw-inner": {
+   "index": 54,
+   "x": 96,
+   "y": 48,
+   "type": "transition",
+   "a": "sand",
+   "b": "water",
+   "dir": "nw-inner"
+  },
+  "sand-water-se-inner": {
+   "index": 55,
+   "x": 112,
+   "y": 48,
+   "type": "transition",
+   "a": "sand",
+   "b": "water",
+   "dir": "se-inner"
+  },
+  "sand-water-sw-inner": {
+   "index": 56,
+   "x": 128,
+   "y": 48,
+   "type": "transition",
+   "a": "sand",
+   "b": "water",
+   "dir": "sw-inner"
+  },
+  "grass-dirt-n": {
+   "index": 57,
+   "x": 144,
+   "y": 48,
+   "type": "transition",
+   "a": "grass",
+   "b": "dirt",
+   "dir": "n"
+  },
+  "grass-dirt-s": {
+   "index": 58,
+   "x": 160,
+   "y": 48,
+   "type": "transition",
+   "a": "grass",
+   "b": "dirt",
+   "dir": "s"
+  },
+  "grass-dirt-e": {
+   "index": 59,
+   "x": 176,
+   "y": 48,
+   "type": "transition",
+   "a": "grass",
+   "b": "dirt",
+   "dir": "e"
+  },
+  "grass-dirt-w": {
+   "index": 60,
+   "x": 192,
+   "y": 48,
+   "type": "transition",
+   "a": "grass",
+   "b": "dirt",
+   "dir": "w"
+  },
+  "grass-dirt-ne": {
+   "index": 61,
+   "x": 208,
+   "y": 48,
+   "type": "transition",
+   "a": "grass",
+   "b": "dirt",
+   "dir": "ne"
+  },
+  "grass-dirt-nw": {
+   "index": 62,
+   "x": 224,
+   "y": 48,
+   "type": "transition",
+   "a": "grass",
+   "b": "dirt",
+   "dir": "nw"
+  },
+  "grass-dirt-se": {
+   "index": 63,
+   "x": 240,
+   "y": 48,
+   "type": "transition",
+   "a": "grass",
+   "b": "dirt",
+   "dir": "se"
+  },
+  "grass-dirt-sw": {
+   "index": 64,
+   "x": 0,
+   "y": 64,
+   "type": "transition",
+   "a": "grass",
+   "b": "dirt",
+   "dir": "sw"
+  },
+  "grass-dirt-ne-inner": {
+   "index": 65,
+   "x": 16,
+   "y": 64,
+   "type": "transition",
+   "a": "grass",
+   "b": "dirt",
+   "dir": "ne-inner"
+  },
+  "grass-dirt-nw-inner": {
+   "index": 66,
+   "x": 32,
+   "y": 64,
+   "type": "transition",
+   "a": "grass",
+   "b": "dirt",
+   "dir": "nw-inner"
+  },
+  "grass-dirt-se-inner": {
+   "index": 67,
+   "x": 48,
+   "y": 64,
+   "type": "transition",
+   "a": "grass",
+   "b": "dirt",
+   "dir": "se-inner"
+  },
+  "grass-dirt-sw-inner": {
+   "index": 68,
+   "x": 64,
+   "y": 64,
+   "type": "transition",
+   "a": "grass",
+   "b": "dirt",
+   "dir": "sw-inner"
+  },
+  "grass-sand-n": {
+   "index": 69,
+   "x": 80,
+   "y": 64,
+   "type": "transition",
+   "a": "grass",
+   "b": "sand",
+   "dir": "n"
+  },
+  "grass-sand-s": {
+   "index": 70,
+   "x": 96,
+   "y": 64,
+   "type": "transition",
+   "a": "grass",
+   "b": "sand",
+   "dir": "s"
+  },
+  "grass-sand-e": {
+   "index": 71,
+   "x": 112,
+   "y": 64,
+   "type": "transition",
+   "a": "grass",
+   "b": "sand",
+   "dir": "e"
+  },
+  "grass-sand-w": {
+   "index": 72,
+   "x": 128,
+   "y": 64,
+   "type": "transition",
+   "a": "grass",
+   "b": "sand",
+   "dir": "w"
+  },
+  "grass-sand-ne": {
+   "index": 73,
+   "x": 144,
+   "y": 64,
+   "type": "transition",
+   "a": "grass",
+   "b": "sand",
+   "dir": "ne"
+  },
+  "grass-sand-nw": {
+   "index": 74,
+   "x": 160,
+   "y": 64,
+   "type": "transition",
+   "a": "grass",
+   "b": "sand",
+   "dir": "nw"
+  },
+  "grass-sand-se": {
+   "index": 75,
+   "x": 176,
+   "y": 64,
+   "type": "transition",
+   "a": "grass",
+   "b": "sand",
+   "dir": "se"
+  },
+  "grass-sand-sw": {
+   "index": 76,
+   "x": 192,
+   "y": 64,
+   "type": "transition",
+   "a": "grass",
+   "b": "sand",
+   "dir": "sw"
+  },
+  "grass-sand-ne-inner": {
+   "index": 77,
+   "x": 208,
+   "y": 64,
+   "type": "transition",
+   "a": "grass",
+   "b": "sand",
+   "dir": "ne-inner"
+  },
+  "grass-sand-nw-inner": {
+   "index": 78,
+   "x": 224,
+   "y": 64,
+   "type": "transition",
+   "a": "grass",
+   "b": "sand",
+   "dir": "nw-inner"
+  },
+  "grass-sand-se-inner": {
+   "index": 79,
+   "x": 240,
+   "y": 64,
+   "type": "transition",
+   "a": "grass",
+   "b": "sand",
+   "dir": "se-inner"
+  },
+  "grass-sand-sw-inner": {
+   "index": 80,
+   "x": 0,
+   "y": 80,
+   "type": "transition",
+   "a": "grass",
+   "b": "sand",
+   "dir": "sw-inner"
+  },
+  "forest-grass-n": {
+   "index": 81,
+   "x": 16,
+   "y": 80,
+   "type": "transition",
+   "a": "forest",
+   "b": "grass",
+   "dir": "n"
+  },
+  "forest-grass-s": {
+   "index": 82,
+   "x": 32,
+   "y": 80,
+   "type": "transition",
+   "a": "forest",
+   "b": "grass",
+   "dir": "s"
+  },
+  "forest-grass-e": {
+   "index": 83,
+   "x": 48,
+   "y": 80,
+   "type": "transition",
+   "a": "forest",
+   "b": "grass",
+   "dir": "e"
+  },
+  "forest-grass-w": {
+   "index": 84,
+   "x": 64,
+   "y": 80,
+   "type": "transition",
+   "a": "forest",
+   "b": "grass",
+   "dir": "w"
+  },
+  "forest-grass-ne": {
+   "index": 85,
+   "x": 80,
+   "y": 80,
+   "type": "transition",
+   "a": "forest",
+   "b": "grass",
+   "dir": "ne"
+  },
+  "forest-grass-nw": {
+   "index": 86,
+   "x": 96,
+   "y": 80,
+   "type": "transition",
+   "a": "forest",
+   "b": "grass",
+   "dir": "nw"
+  },
+  "forest-grass-se": {
+   "index": 87,
+   "x": 112,
+   "y": 80,
+   "type": "transition",
+   "a": "forest",
+   "b": "grass",
+   "dir": "se"
+  },
+  "forest-grass-sw": {
+   "index": 88,
+   "x": 128,
+   "y": 80,
+   "type": "transition",
+   "a": "forest",
+   "b": "grass",
+   "dir": "sw"
+  },
+  "forest-grass-ne-inner": {
+   "index": 89,
+   "x": 144,
+   "y": 80,
+   "type": "transition",
+   "a": "forest",
+   "b": "grass",
+   "dir": "ne-inner"
+  },
+  "forest-grass-nw-inner": {
+   "index": 90,
+   "x": 160,
+   "y": 80,
+   "type": "transition",
+   "a": "forest",
+   "b": "grass",
+   "dir": "nw-inner"
+  },
+  "forest-grass-se-inner": {
+   "index": 91,
+   "x": 176,
+   "y": 80,
+   "type": "transition",
+   "a": "forest",
+   "b": "grass",
+   "dir": "se-inner"
+  },
+  "forest-grass-sw-inner": {
+   "index": 92,
+   "x": 192,
+   "y": 80,
+   "type": "transition",
+   "a": "forest",
+   "b": "grass",
+   "dir": "sw-inner"
+  },
+  "corrupt-grass-n": {
+   "index": 93,
+   "x": 208,
+   "y": 80,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "grass",
+   "dir": "n"
+  },
+  "corrupt-grass-s": {
+   "index": 94,
+   "x": 224,
+   "y": 80,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "grass",
+   "dir": "s"
+  },
+  "corrupt-grass-e": {
+   "index": 95,
+   "x": 240,
+   "y": 80,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "grass",
+   "dir": "e"
+  },
+  "corrupt-grass-w": {
+   "index": 96,
+   "x": 0,
+   "y": 96,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "grass",
+   "dir": "w"
+  },
+  "corrupt-grass-ne": {
+   "index": 97,
+   "x": 16,
+   "y": 96,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "grass",
+   "dir": "ne"
+  },
+  "corrupt-grass-nw": {
+   "index": 98,
+   "x": 32,
+   "y": 96,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "grass",
+   "dir": "nw"
+  },
+  "corrupt-grass-se": {
+   "index": 99,
+   "x": 48,
+   "y": 96,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "grass",
+   "dir": "se"
+  },
+  "corrupt-grass-sw": {
+   "index": 100,
+   "x": 64,
+   "y": 96,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "grass",
+   "dir": "sw"
+  },
+  "corrupt-grass-ne-inner": {
+   "index": 101,
+   "x": 80,
+   "y": 96,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "grass",
+   "dir": "ne-inner"
+  },
+  "corrupt-grass-nw-inner": {
+   "index": 102,
+   "x": 96,
+   "y": 96,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "grass",
+   "dir": "nw-inner"
+  },
+  "corrupt-grass-se-inner": {
+   "index": 103,
+   "x": 112,
+   "y": 96,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "grass",
+   "dir": "se-inner"
+  },
+  "corrupt-grass-sw-inner": {
+   "index": 104,
+   "x": 128,
+   "y": 96,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "grass",
+   "dir": "sw-inner"
+  },
+  "wasteland-corrupt-n": {
+   "index": 105,
+   "x": 144,
+   "y": 96,
+   "type": "transition",
+   "a": "wasteland",
+   "b": "corrupt",
+   "dir": "n"
+  },
+  "wasteland-corrupt-s": {
+   "index": 106,
+   "x": 160,
+   "y": 96,
+   "type": "transition",
+   "a": "wasteland",
+   "b": "corrupt",
+   "dir": "s"
+  },
+  "wasteland-corrupt-e": {
+   "index": 107,
+   "x": 176,
+   "y": 96,
+   "type": "transition",
+   "a": "wasteland",
+   "b": "corrupt",
+   "dir": "e"
+  },
+  "wasteland-corrupt-w": {
+   "index": 108,
+   "x": 192,
+   "y": 96,
+   "type": "transition",
+   "a": "wasteland",
+   "b": "corrupt",
+   "dir": "w"
+  },
+  "wasteland-corrupt-ne": {
+   "index": 109,
+   "x": 208,
+   "y": 96,
+   "type": "transition",
+   "a": "wasteland",
+   "b": "corrupt",
+   "dir": "ne"
+  },
+  "wasteland-corrupt-nw": {
+   "index": 110,
+   "x": 224,
+   "y": 96,
+   "type": "transition",
+   "a": "wasteland",
+   "b": "corrupt",
+   "dir": "nw"
+  },
+  "wasteland-corrupt-se": {
+   "index": 111,
+   "x": 240,
+   "y": 96,
+   "type": "transition",
+   "a": "wasteland",
+   "b": "corrupt",
+   "dir": "se"
+  },
+  "wasteland-corrupt-sw": {
+   "index": 112,
+   "x": 0,
+   "y": 112,
+   "type": "transition",
+   "a": "wasteland",
+   "b": "corrupt",
+   "dir": "sw"
+  },
+  "wasteland-corrupt-ne-inner": {
+   "index": 113,
+   "x": 16,
+   "y": 112,
+   "type": "transition",
+   "a": "wasteland",
+   "b": "corrupt",
+   "dir": "ne-inner"
+  },
+  "wasteland-corrupt-nw-inner": {
+   "index": 114,
+   "x": 32,
+   "y": 112,
+   "type": "transition",
+   "a": "wasteland",
+   "b": "corrupt",
+   "dir": "nw-inner"
+  },
+  "wasteland-corrupt-se-inner": {
+   "index": 115,
+   "x": 48,
+   "y": 112,
+   "type": "transition",
+   "a": "wasteland",
+   "b": "corrupt",
+   "dir": "se-inner"
+  },
+  "wasteland-corrupt-sw-inner": {
+   "index": 116,
+   "x": 64,
+   "y": 112,
+   "type": "transition",
+   "a": "wasteland",
+   "b": "corrupt",
+   "dir": "sw-inner"
+  },
+  "ash-lava-n": {
+   "index": 117,
+   "x": 80,
+   "y": 112,
+   "type": "transition",
+   "a": "ash",
+   "b": "lava",
+   "dir": "n"
+  },
+  "ash-lava-s": {
+   "index": 118,
+   "x": 96,
+   "y": 112,
+   "type": "transition",
+   "a": "ash",
+   "b": "lava",
+   "dir": "s"
+  },
+  "ash-lava-e": {
+   "index": 119,
+   "x": 112,
+   "y": 112,
+   "type": "transition",
+   "a": "ash",
+   "b": "lava",
+   "dir": "e"
+  },
+  "ash-lava-w": {
+   "index": 120,
+   "x": 128,
+   "y": 112,
+   "type": "transition",
+   "a": "ash",
+   "b": "lava",
+   "dir": "w"
+  },
+  "ash-lava-ne": {
+   "index": 121,
+   "x": 144,
+   "y": 112,
+   "type": "transition",
+   "a": "ash",
+   "b": "lava",
+   "dir": "ne"
+  },
+  "ash-lava-nw": {
+   "index": 122,
+   "x": 160,
+   "y": 112,
+   "type": "transition",
+   "a": "ash",
+   "b": "lava",
+   "dir": "nw"
+  },
+  "ash-lava-se": {
+   "index": 123,
+   "x": 176,
+   "y": 112,
+   "type": "transition",
+   "a": "ash",
+   "b": "lava",
+   "dir": "se"
+  },
+  "ash-lava-sw": {
+   "index": 124,
+   "x": 192,
+   "y": 112,
+   "type": "transition",
+   "a": "ash",
+   "b": "lava",
+   "dir": "sw"
+  },
+  "ash-lava-ne-inner": {
+   "index": 125,
+   "x": 208,
+   "y": 112,
+   "type": "transition",
+   "a": "ash",
+   "b": "lava",
+   "dir": "ne-inner"
+  },
+  "ash-lava-nw-inner": {
+   "index": 126,
+   "x": 224,
+   "y": 112,
+   "type": "transition",
+   "a": "ash",
+   "b": "lava",
+   "dir": "nw-inner"
+  },
+  "ash-lava-se-inner": {
+   "index": 127,
+   "x": 240,
+   "y": 112,
+   "type": "transition",
+   "a": "ash",
+   "b": "lava",
+   "dir": "se-inner"
+  },
+  "ash-lava-sw-inner": {
+   "index": 128,
+   "x": 0,
+   "y": 128,
+   "type": "transition",
+   "a": "ash",
+   "b": "lava",
+   "dir": "sw-inner"
+  },
+  "ash-wasteland-n": {
+   "index": 129,
+   "x": 16,
+   "y": 128,
+   "type": "transition",
+   "a": "ash",
+   "b": "wasteland",
+   "dir": "n"
+  },
+  "ash-wasteland-s": {
+   "index": 130,
+   "x": 32,
+   "y": 128,
+   "type": "transition",
+   "a": "ash",
+   "b": "wasteland",
+   "dir": "s"
+  },
+  "ash-wasteland-e": {
+   "index": 131,
+   "x": 48,
+   "y": 128,
+   "type": "transition",
+   "a": "ash",
+   "b": "wasteland",
+   "dir": "e"
+  },
+  "ash-wasteland-w": {
+   "index": 132,
+   "x": 64,
+   "y": 128,
+   "type": "transition",
+   "a": "ash",
+   "b": "wasteland",
+   "dir": "w"
+  },
+  "ash-wasteland-ne": {
+   "index": 133,
+   "x": 80,
+   "y": 128,
+   "type": "transition",
+   "a": "ash",
+   "b": "wasteland",
+   "dir": "ne"
+  },
+  "ash-wasteland-nw": {
+   "index": 134,
+   "x": 96,
+   "y": 128,
+   "type": "transition",
+   "a": "ash",
+   "b": "wasteland",
+   "dir": "nw"
+  },
+  "ash-wasteland-se": {
+   "index": 135,
+   "x": 112,
+   "y": 128,
+   "type": "transition",
+   "a": "ash",
+   "b": "wasteland",
+   "dir": "se"
+  },
+  "ash-wasteland-sw": {
+   "index": 136,
+   "x": 128,
+   "y": 128,
+   "type": "transition",
+   "a": "ash",
+   "b": "wasteland",
+   "dir": "sw"
+  },
+  "ash-wasteland-ne-inner": {
+   "index": 137,
+   "x": 144,
+   "y": 128,
+   "type": "transition",
+   "a": "ash",
+   "b": "wasteland",
+   "dir": "ne-inner"
+  },
+  "ash-wasteland-nw-inner": {
+   "index": 138,
+   "x": 160,
+   "y": 128,
+   "type": "transition",
+   "a": "ash",
+   "b": "wasteland",
+   "dir": "nw-inner"
+  },
+  "ash-wasteland-se-inner": {
+   "index": 139,
+   "x": 176,
+   "y": 128,
+   "type": "transition",
+   "a": "ash",
+   "b": "wasteland",
+   "dir": "se-inner"
+  },
+  "ash-wasteland-sw-inner": {
+   "index": 140,
+   "x": 192,
+   "y": 128,
+   "type": "transition",
+   "a": "ash",
+   "b": "wasteland",
+   "dir": "sw-inner"
+  },
+  "corrupt-deepwater-n": {
+   "index": 141,
+   "x": 208,
+   "y": 128,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "deepwater",
+   "dir": "n"
+  },
+  "corrupt-deepwater-s": {
+   "index": 142,
+   "x": 224,
+   "y": 128,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "deepwater",
+   "dir": "s"
+  },
+  "corrupt-deepwater-e": {
+   "index": 143,
+   "x": 240,
+   "y": 128,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "deepwater",
+   "dir": "e"
+  },
+  "corrupt-deepwater-w": {
+   "index": 144,
+   "x": 0,
+   "y": 144,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "deepwater",
+   "dir": "w"
+  },
+  "corrupt-deepwater-ne": {
+   "index": 145,
+   "x": 16,
+   "y": 144,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "deepwater",
+   "dir": "ne"
+  },
+  "corrupt-deepwater-nw": {
+   "index": 146,
+   "x": 32,
+   "y": 144,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "deepwater",
+   "dir": "nw"
+  },
+  "corrupt-deepwater-se": {
+   "index": 147,
+   "x": 48,
+   "y": 144,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "deepwater",
+   "dir": "se"
+  },
+  "corrupt-deepwater-sw": {
+   "index": 148,
+   "x": 64,
+   "y": 144,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "deepwater",
+   "dir": "sw"
+  },
+  "corrupt-deepwater-ne-inner": {
+   "index": 149,
+   "x": 80,
+   "y": 144,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "deepwater",
+   "dir": "ne-inner"
+  },
+  "corrupt-deepwater-nw-inner": {
+   "index": 150,
+   "x": 96,
+   "y": 144,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "deepwater",
+   "dir": "nw-inner"
+  },
+  "corrupt-deepwater-se-inner": {
+   "index": 151,
+   "x": 112,
+   "y": 144,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "deepwater",
+   "dir": "se-inner"
+  },
+  "corrupt-deepwater-sw-inner": {
+   "index": 152,
+   "x": 128,
+   "y": 144,
+   "type": "transition",
+   "a": "corrupt",
+   "b": "deepwater",
+   "dir": "sw-inner"
+  },
+  "stone-sand-n": {
+   "index": 153,
+   "x": 144,
+   "y": 144,
+   "type": "transition",
+   "a": "stone",
+   "b": "sand",
+   "dir": "n"
+  },
+  "stone-sand-s": {
+   "index": 154,
+   "x": 160,
+   "y": 144,
+   "type": "transition",
+   "a": "stone",
+   "b": "sand",
+   "dir": "s"
+  },
+  "stone-sand-e": {
+   "index": 155,
+   "x": 176,
+   "y": 144,
+   "type": "transition",
+   "a": "stone",
+   "b": "sand",
+   "dir": "e"
+  },
+  "stone-sand-w": {
+   "index": 156,
+   "x": 192,
+   "y": 144,
+   "type": "transition",
+   "a": "stone",
+   "b": "sand",
+   "dir": "w"
+  },
+  "stone-sand-ne": {
+   "index": 157,
+   "x": 208,
+   "y": 144,
+   "type": "transition",
+   "a": "stone",
+   "b": "sand",
+   "dir": "ne"
+  },
+  "stone-sand-nw": {
+   "index": 158,
+   "x": 224,
+   "y": 144,
+   "type": "transition",
+   "a": "stone",
+   "b": "sand",
+   "dir": "nw"
+  },
+  "stone-sand-se": {
+   "index": 159,
+   "x": 240,
+   "y": 144,
+   "type": "transition",
+   "a": "stone",
+   "b": "sand",
+   "dir": "se"
+  },
+  "stone-sand-sw": {
+   "index": 160,
+   "x": 0,
+   "y": 160,
+   "type": "transition",
+   "a": "stone",
+   "b": "sand",
+   "dir": "sw"
+  },
+  "stone-sand-ne-inner": {
+   "index": 161,
+   "x": 16,
+   "y": 160,
+   "type": "transition",
+   "a": "stone",
+   "b": "sand",
+   "dir": "ne-inner"
+  },
+  "stone-sand-nw-inner": {
+   "index": 162,
+   "x": 32,
+   "y": 160,
+   "type": "transition",
+   "a": "stone",
+   "b": "sand",
+   "dir": "nw-inner"
+  },
+  "stone-sand-se-inner": {
+   "index": 163,
+   "x": 48,
+   "y": 160,
+   "type": "transition",
+   "a": "stone",
+   "b": "sand",
+   "dir": "se-inner"
+  },
+  "stone-sand-sw-inner": {
+   "index": 164,
+   "x": 64,
+   "y": 160,
+   "type": "transition",
+   "a": "stone",
+   "b": "sand",
+   "dir": "sw-inner"
+  },
+  "tree-oak": {
+   "index": 165,
+   "x": 80,
+   "y": 160,
+   "type": "object"
+  },
+  "tree-pine": {
+   "index": 166,
+   "x": 96,
+   "y": 160,
+   "type": "object"
+  },
+  "tree-cactus": {
+   "index": 167,
+   "x": 112,
+   "y": 160,
+   "type": "object"
+  },
+  "tree-dead": {
+   "index": 168,
+   "x": 128,
+   "y": 160,
+   "type": "object"
+  },
+  "tree-charred": {
+   "index": 169,
+   "x": 144,
+   "y": 160,
+   "type": "object"
+  },
+  "tree-corrupt": {
+   "index": 170,
+   "x": 160,
+   "y": 160,
+   "type": "object"
+  },
+  "tree-bush": {
+   "index": 171,
+   "x": 176,
+   "y": 160,
+   "type": "object"
+  },
+  "rock-gray-big": {
+   "index": 172,
+   "x": 192,
+   "y": 160,
+   "type": "object"
+  },
+  "rock-gray-small": {
+   "index": 173,
+   "x": 208,
+   "y": 160,
+   "type": "object"
+  },
+  "rock-sand-big": {
+   "index": 174,
+   "x": 224,
+   "y": 160,
+   "type": "object"
+  },
+  "rock-sand-small": {
+   "index": 175,
+   "x": 240,
+   "y": 160,
+   "type": "object"
+  },
+  "rock-obsidian-big": {
+   "index": 176,
+   "x": 0,
+   "y": 176,
+   "type": "object"
+  },
+  "rock-obsidian-small": {
+   "index": 177,
+   "x": 16,
+   "y": 176,
+   "type": "object"
+  },
+  "rock-crystal-big": {
+   "index": 178,
+   "x": 32,
+   "y": 176,
+   "type": "object"
+  },
+  "bones": {
+   "index": 179,
+   "x": 48,
+   "y": 176,
+   "type": "object"
+  },
+  "flowers": {
+   "index": 180,
+   "x": 64,
+   "y": 176,
+   "type": "object"
+  },
+  "lava-vent": {
+   "index": 181,
+   "x": 80,
+   "y": 176,
+   "type": "object"
+  }
+ }
+}

@@ -1,0 +1,7 @@
+{
+ "image": "player-idle-left.png",
+ "frameWidth": 16,
+ "frameHeight": 16,
+ "frames": 4,
+ "fps": 4
+}
