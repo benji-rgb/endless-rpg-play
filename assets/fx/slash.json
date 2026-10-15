@@ -1,0 +1,7 @@
+{
+ "image": "slash.png",
+ "frameWidth": 32,
+ "frameHeight": 32,
+ "frames": 5,
+ "fps": 20
+}
