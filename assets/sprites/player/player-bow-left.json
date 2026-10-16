@@ -1,0 +1,7 @@
+{
+ "image": "player-bow-left.png",
+ "frameWidth": 16,
+ "frameHeight": 16,
+ "frames": 3,
+ "fps": 10
+}

@@ -1,0 +1,7 @@
+{
+ "image": "lightning.png",
+ "frameWidth": 16,
+ "frameHeight": 64,
+ "frames": 4,
+ "fps": 16
+}
