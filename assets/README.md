@@ -400,7 +400,7 @@ c28569
 - `ui/joystick-knob.png` — 36×36
 - `ui/panel.png` — 48×48, 9-slice, 8px borders
 
-### sfx/ (74 files)
+### sfx/ (80 files)
 - `sfx/arcane-hum.mp3`
 - `sfx/arcane-hum.ogg`
 - `sfx/attack-swing.mp3`
@@ -451,6 +451,12 @@ c28569
 - `sfx/orb-pickup-health.ogg`
 - `sfx/orb-pickup-mana.mp3`
 - `sfx/orb-pickup-mana.ogg`
+- `sfx/parry-clang.mp3`
+- `sfx/parry-clang.ogg`
+- `sfx/parry-clang-2.mp3`
+- `sfx/parry-clang-2.ogg`
+- `sfx/parry-clang-3.mp3`
+- `sfx/parry-clang-3.ogg`
 - `sfx/pickup-gold.mp3`
 - `sfx/pickup-gold.ogg`
 - `sfx/pickup-item.mp3`
