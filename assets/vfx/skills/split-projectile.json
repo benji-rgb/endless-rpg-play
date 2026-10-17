@@ -1,0 +1,14 @@
+{
+ "image": "split-projectile.png",
+ "frameWidth": 32,
+ "frameHeight": 32,
+ "frames": 8,
+ "fps": 16,
+ "loop": true,
+ "blend": "ADD",
+ "origin": {
+  "x": 0.59375,
+  "y": 0.5
+ },
+ "note": "points right"
+}

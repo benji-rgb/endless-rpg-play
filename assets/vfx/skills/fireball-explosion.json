@@ -1,0 +1,13 @@
+{
+ "image": "fireball-explosion.png",
+ "frameWidth": 128,
+ "frameHeight": 128,
+ "frames": 12,
+ "fps": 18,
+ "loop": false,
+ "blend": "ADD",
+ "origin": {
+  "x": 0.5,
+  "y": 0.5
+ }
+}

@@ -51,7 +51,7 @@ c28569
 - `tiles/tileset.png` is a 16-col atlas (`tiles/tileset.json` maps name → index/x/y/type). Individual tiles also in `tiles/`. Base grounds have 3 variants (`-1..3`). Transitions `<a>-<b>-<dir>` (A = main tile, B = neighbor): `n/s/e/w` = B along that side; `ne/nw/se/sw` = B on both sides (A convex corner); `*-inner` = B only in that corner. Edges meet B at depth 5px on tile borders so they tile seamlessly.
 - Biomes (suggested by distance from origin): meadow → forest → desert → corrupted → volcanic (see `biomes` in tileset.json).
 - UI: `panel.png` is 9-slice with 8px borders; bars: draw `bar-fill-*` (60×6) at offset (2,2) inside `bar-frame` (64×10) and crop width by %. HUD chrome is `ui/hud-icons.png` (128×64, 29 frames of 16×16) plus `ui/hud-icons.json` (Phaser JSON Hash: `this.load.atlas('hud', 'ui/hud-icons.png', 'ui/hud-icons.json')`, frames by name). Loose copies live in `ui/hud-icons/<name>.png` for the DOM overlay. Scale ×2 (32px CSS) inside ~40px hits; nearest-neighbor (`pixelArt`). Preview: `ui/hud-icons-preview.png`.
-- Weapons: sword, bow, staff only. Skill FX (`fireball-*`, `split-*`, `concentrate-impact`) and drop orbs are pre-colored (no tint needed). split: `split-projectile` main → `split-shard` children, `split-trail` (32×8, rotate along bounce path), `split-burst` on split/bounce. fireball-explosion is 80×80.
+- Weapons: sword, bow, staff only. Legacy skill FX (`fx/fireball-*`, `fx/split-*`, `fx/concentrate-impact`) stay as fallbacks. High-quality sheets live in `vfx/skills/` with a sidecar JSON `{frameWidth, frameHeight, frames, fps, loop, blend, origin}`: `setBlendMode(ADD)` when `blend` is ADD, `setOrigin(origin.x, origin.y)`, linear filter. `particles.png` is an 8×8 JSON Hash atlas (white frames tint with the gem; `smoke-*` stay NORMAL). The runtime map is `src/render/skillJuice.ts`. Drop orbs are pre-colored. split: `split-projectile` main → `split-shard` children, `split-trail` (32×8, rotate along bounce path), `split-burst` on split/bounce. fireball-explosion is 80×80.
 - Gems (definitive): ruby=Ignition/burn, sapphire=Frost/slow, topaz=Storm/lightning, amethyst=Arcane, emerald=Vampiric/lifesteal. Icons `items/gem-<name>.png` (16×16); socketed `ui/gem-socket-<name>.png` (16×16, same as `ui/gem-socket.png`). The old generic gems (gem-red/blue/green/yellow/purple/white) were removed. Status FX: `burn-puddle`, `burn-overlay`, `frost-aura` (at feet), `frost-overlay`, `ice-block-form` → `ice-block` (static, dithered see-through so the enemy shows) → `ice-block-shatter`, `electric-arc` (32×8 strip, rotate/stretch between targets), `spark-burst`, `arcane-aura` (24×24, centre on feet), `lifesteal-particles`. Loops: burn-*, frost-*, arcane-aura, lifesteal-particles, electric-arc.
 - Looping SFX: `burn-loop`, `arcane-hum` (2.0 s, seamless; use the OGG for gapless looping because MP3 adds encoder padding).
 - SFX: OGG + MP3, 44.1 kHz mono, peak-normalized to −1 dBFS.
@@ -59,7 +59,7 @@ c28569
 ## Preview
 `preview.png` (contact sheet, 4× nearest). Per-category previews in `tools/preview-*.png`.
 
-## File list (384 PNG)
+## File list (400 PNG)
 
 
 ### fx/
@@ -401,6 +401,25 @@ c28569
 - `ui/joystick-base.png` — 96×96
 - `ui/joystick-knob.png` — 36×36
 - `ui/panel.png` — 48×48, 9-slice, 8px borders
+
+### vfx/skills/
+High-quality skill sheets (linear, not the 16×16 world). Each PNG has a JSON sidecar. `particles.png` is an 8×8 atlas (`spark/ember/flash` × white/fire/elec/gold/red/ice, plus `smoke-white` and `smoke-gray`).
+- `vfx/skills/fireball-projectile.png` — 512×32, 8×64×32 @ 16 fps, ADD, origin core
+- `vfx/skills/fireball-charged-projectile.png` — 512×32, 8×64×32 @ 16 fps, ADD
+- `vfx/skills/fireball-explosion.png` — 1536×128, 12×128×128 @ 18 fps, ADD
+- `vfx/skills/fireball-explosion-smoke.png` — 1536×128, 12×128×128 @ 18 fps, NORMAL
+- `vfx/skills/fireball-charged-explosion.png` — 1536×128, 12×128×128 @ 18 fps, ADD
+- `vfx/skills/fireball-charged-explosion-smoke.png` — 1536×128, 12×128×128 @ 18 fps, NORMAL
+- `vfx/skills/split-projectile.png` — 256×32, 8×32×32 @ 16 fps, ADD
+- `vfx/skills/split-burst.png` — 512×64, 8×64×64 @ 18 fps, ADD
+- `vfx/skills/split-chain.png` — 768×24, 6×128×24 @ 20 fps, ADD, origin left-center
+- `vfx/skills/concentrate-charge.png` — 640×64, 10×64×64 @ 16 fps, ADD
+- `vfx/skills/concentrate-impact.png` — 640×64, 10×64×64 @ 20 fps, ADD
+- `vfx/skills/concentrate-execute.png` — 640×64, 10×64×64 @ 20 fps, ADD
+- `vfx/skills/charge-aura-1.png` — 512×64, 8×64×64 @ 12 fps, ADD, origin feet
+- `vfx/skills/charge-aura-2.png` — 512×64, 8×64×64 @ 12 fps, ADD, origin feet
+- `vfx/skills/charge-aura-3.png` — 512×64, 8×64×64 @ 12 fps, ADD, origin feet
+- `vfx/skills/particles.png` — 48×32 atlas
 
 ### sfx/ (80 files)
 - `sfx/arcane-hum.mp3`

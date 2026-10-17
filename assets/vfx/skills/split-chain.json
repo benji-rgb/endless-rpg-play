@@ -1,0 +1,14 @@
+{
+ "image": "split-chain.png",
+ "frameWidth": 128,
+ "frameHeight": 24,
+ "frames": 6,
+ "fps": 20,
+ "loop": true,
+ "blend": "ADD",
+ "origin": {
+  "x": 0,
+  "y": 0.5
+ },
+ "note": "endpoints at (0,12) and (127,12): origin left-center, rotate to target, scaleX = distance/128 (or tile)"
+}

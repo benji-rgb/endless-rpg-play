@@ -1,0 +1,13 @@
+{
+ "image": "concentrate-execute.png",
+ "frameWidth": 64,
+ "frameHeight": 64,
+ "frames": 10,
+ "fps": 20,
+ "loop": false,
+ "blend": "ADD",
+ "origin": {
+  "x": 0.5,
+  "y": 0.5
+ }
+}

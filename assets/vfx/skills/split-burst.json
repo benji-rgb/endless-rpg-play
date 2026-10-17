@@ -1,0 +1,13 @@
+{
+ "image": "split-burst.png",
+ "frameWidth": 64,
+ "frameHeight": 64,
+ "frames": 8,
+ "fps": 18,
+ "loop": false,
+ "blend": "ADD",
+ "origin": {
+  "x": 0.5,
+  "y": 0.5
+ }
+}

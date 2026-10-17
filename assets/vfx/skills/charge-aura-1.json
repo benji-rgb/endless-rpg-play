@@ -1,0 +1,14 @@
+{
+ "image": "charge-aura-1.png",
+ "frameWidth": 64,
+ "frameHeight": 64,
+ "frames": 8,
+ "fps": 12,
+ "loop": true,
+ "blend": "ADD",
+ "origin": {
+  "x": 0.5,
+  "y": 0.71875
+ },
+ "note": "origin = player feet"
+}
