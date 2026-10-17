@@ -1,0 +1,14 @@
+{
+ "image": "gem-emerald-link.png",
+ "frameWidth": 32,
+ "frameHeight": 8,
+ "frames": 6,
+ "fps": 16,
+ "loop": false,
+ "blend": "ADD",
+ "origin": {
+  "x": 0,
+  "y": 0.5
+ },
+ "note": "Emerald Vampiric: green thread from foe (left, origin) to caster (right); scaleX = distance/32; tint #9af6ff for mana"
+}

@@ -1,0 +1,14 @@
+{
+ "image": "gem-ruby-pool-large-scorch.png",
+ "frameWidth": 128,
+ "frameHeight": 64,
+ "frames": 1,
+ "fps": 1,
+ "loop": false,
+ "blend": "NORMAL",
+ "origin": {
+  "x": 0.5,
+  "y": 0.5
+ },
+ "note": "NORMAL under-layer: charred ground under gem-ruby-pool-large; same scale/origin; fade alpha out after the pool ends"
+}

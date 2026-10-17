@@ -1,0 +1,14 @@
+{
+ "image": "gem-platinum-shimmer.png",
+ "frameWidth": 32,
+ "frameHeight": 32,
+ "frames": 6,
+ "fps": 16,
+ "loop": false,
+ "blend": "ADD",
+ "origin": {
+  "x": 0.5,
+  "y": 0.5
+ },
+ "note": "Platinum Contagion: diamond burst on the foe the effect jumps to"
+}

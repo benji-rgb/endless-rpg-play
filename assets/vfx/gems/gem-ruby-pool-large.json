@@ -1,0 +1,14 @@
+{
+ "image": "gem-ruby-pool-large.png",
+ "frameWidth": 128,
+ "frameHeight": 64,
+ "frames": 10,
+ "fps": 12,
+ "loop": true,
+ "blend": "ADD",
+ "origin": {
+  "x": 0.5,
+  "y": 0.5
+ },
+ "note": "Large fireball fire lake (top-down ellipse ~118x55 px inside 128x64). Replaces stretched fx/burn-puddle. scaleX = diameter/128, scaleY = scaleX (or diameterY/64)"
+}

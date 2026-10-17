@@ -1,0 +1,14 @@
+{
+ "image": "gem-ruby-pool.png",
+ "frameWidth": 32,
+ "frameHeight": 32,
+ "frames": 6,
+ "fps": 12,
+ "loop": true,
+ "blend": "ADD",
+ "origin": {
+  "x": 0.5,
+  "y": 0.85
+ },
+ "note": "Ruby on Fireball: low flames on the ground"
+}

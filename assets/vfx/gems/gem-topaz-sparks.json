@@ -1,0 +1,14 @@
+{
+ "image": "gem-topaz-sparks.png",
+ "frameWidth": 32,
+ "frameHeight": 32,
+ "frames": 6,
+ "fps": 18,
+ "loop": false,
+ "blend": "ADD",
+ "origin": {
+  "x": 0.5,
+  "y": 0.5
+ },
+ "note": "Topaz Storm: tight electric burst"
+}

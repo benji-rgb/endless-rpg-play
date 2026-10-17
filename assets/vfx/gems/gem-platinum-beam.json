@@ -1,0 +1,14 @@
+{
+ "image": "gem-platinum-beam.png",
+ "frameWidth": 48,
+ "frameHeight": 16,
+ "frames": 6,
+ "fps": 18,
+ "loop": true,
+ "blend": "ADD",
+ "origin": {
+  "x": 0,
+  "y": 0.5
+ },
+ "note": "Platinum hop link: crystal filament; scaleX = distance/48"
+}

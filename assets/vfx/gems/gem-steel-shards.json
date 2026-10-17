@@ -1,0 +1,14 @@
+{
+ "image": "gem-steel-shards.png",
+ "frameWidth": 32,
+ "frameHeight": 32,
+ "frames": 6,
+ "fps": 16,
+ "loop": false,
+ "blend": "ADD",
+ "origin": {
+  "x": 0.5,
+  "y": 0.5
+ },
+ "note": "Steel Endurance: metallic splinters on a stacking hit"
+}
