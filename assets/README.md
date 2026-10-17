@@ -50,7 +50,7 @@ c28569
 - `fx/` is white/gray only — tint with `setTint()` per gem/element (use ADD blend for glow).
 - `tiles/tileset.png` is a 16-col atlas (`tiles/tileset.json` maps name → index/x/y/type). Individual tiles also in `tiles/`. Base grounds have 3 variants (`-1..3`). Transitions `<a>-<b>-<dir>` (A = main tile, B = neighbor): `n/s/e/w` = B along that side; `ne/nw/se/sw` = B on both sides (A convex corner); `*-inner` = B only in that corner. Edges meet B at depth 5px on tile borders so they tile seamlessly.
 - Biomes (suggested by distance from origin): meadow → forest → desert → corrupted → volcanic (see `biomes` in tileset.json).
-- UI: `panel.png` is 9-slice with 8px borders; bars: draw `bar-fill-*` (60×6) at offset (2,2) inside `bar-frame` (64×10) and crop width by %.
+- UI: `panel.png` is 9-slice with 8px borders; bars: draw `bar-fill-*` (60×6) at offset (2,2) inside `bar-frame` (64×10) and crop width by %. HUD chrome is `ui/hud-icons.png` (128×64, 29 frames of 16×16) plus `ui/hud-icons.json` (Phaser JSON Hash: `this.load.atlas('hud', 'ui/hud-icons.png', 'ui/hud-icons.json')`, frames by name). Loose copies live in `ui/hud-icons/<name>.png` for the DOM overlay. Scale ×2 (32px CSS) inside ~40px hits; nearest-neighbor (`pixelArt`). Preview: `ui/hud-icons-preview.png`.
 - Weapons: sword, bow, staff only. Skill FX (`fireball-*`, `split-*`, `concentrate-impact`) and drop orbs are pre-colored (no tint needed). split: `split-projectile` main → `split-shard` children, `split-trail` (32×8, rotate along bounce path), `split-burst` on split/bounce. fireball-explosion is 80×80.
 - Gems (definitive): ruby=Ignition/burn, sapphire=Frost/slow, topaz=Storm/lightning, amethyst=Arcane, emerald=Vampiric/lifesteal. Icons `items/gem-<name>.png` (16×16); socketed `ui/gem-socket-<name>.png` (16×16, same as `ui/gem-socket.png`). The old generic gems (gem-red/blue/green/yellow/purple/white) were removed. Status FX: `burn-puddle`, `burn-overlay`, `frost-aura` (at feet), `frost-overlay`, `ice-block-form` → `ice-block` (static, dithered see-through so the enemy shows) → `ice-block-shatter`, `electric-arc` (32×8 strip, rotate/stretch between targets), `spark-burst`, `arcane-aura` (24×24, centre on feet), `lifesteal-particles`. Loops: burn-*, frost-*, arcane-aura, lifesteal-particles, electric-arc.
 - Looping SFX: `burn-loop`, `arcane-hum` (2.0 s, seamless; use the OGG for gapless looping because MP3 adds encoder padding).
@@ -59,7 +59,7 @@ c28569
 ## Preview
 `preview.png` (contact sheet, 4× nearest). Per-category previews in `tools/preview-*.png`.
 
-## File list (324 PNG)
+## File list (384 PNG)
 
 
 ### fx/
@@ -394,6 +394,8 @@ c28569
 - `ui/gem-socket-sapphire.png` — 16×16
 - `ui/gem-socket-topaz.png` — 16×16
 - `ui/gem-socket.png` — 16×16
+- `ui/hud-icons.png` — 128×64 atlas, 29×16×16 (JSON Hash in `ui/hud-icons.json`; loose frames in `ui/hud-icons/`)
+- `ui/hud-icons-preview.png` — contact sheet
 - `ui/inventory-slot-selected.png` — 20×20
 - `ui/inventory-slot.png` — 20×20
 - `ui/joystick-base.png` — 96×96
